@@ -195,7 +195,7 @@ h2::after {
 
 /* --- Hero Section --- */
 #hero {
-    background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.9)), url('your-hero-background.jpg') no-repeat center center/cover; {/* === PATH UPDATED: Removed 'images/' === */}
+    background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.9)), url('images/your-hero-background.jpg') no-repeat center center/cover; {/* === Path reverted to 'images/your-hero-background.jpg' === */}
     color: var(--text-light);
     min-height: calc(100vh - var(--header-height));
     display: flex;
