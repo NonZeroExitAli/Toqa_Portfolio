@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toqa Khaled Abd El-Ghany - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png" type="image/png"> {/* === REMINDER: Replace with your actual favicon path === */}
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Toqa K. Abd El-Ghany</div>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                ☰ <!-- Hamburger Icon -->
+            </button>
+            <ul id="primary-navigation" data-visible="false">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#leadership-awards">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="link-to-your-resume.pdf" target="_blank" class="resume-button">Resume</a></li> {/* === REMINDER: Replace with your actual resume link === */}
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Toqa Khaled Abd El-Ghany</h1>
+                <p class="tagline">Bioinformatics & Computational Biology Researcher | AI in Healthcare | Machine Learning</p>
+                <p>A dedicated Computational Biologist from Zewail City, driven by a passion for leveraging AI and genomic data to solve complex biological problems, especially in neurodegenerative diseases like Alzheimer's. Eager to contribute to interpretable AI systems for precision medicine.</p>
+                <div class="hero-links">
+                    <a href="https://www.linkedin.com/in/toqakhaled/" target="_blank">LinkedIn</a> {/* === REMINDER: Replace with your actual LinkedIn URL === */}
+                    <a href="https://github.com/ToqaKhaled" target="_blank">GitHub</a> {/* === REMINDER: Replace with your actual GitHub URL === */}
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images/your_photo.jpg" alt="Toqa Abd El-Ghany" class="profile-pic"> {/* === REMINDER: Replace with your actual photo path === */}
+                <div class="about-text">
+                    <p>I am a highly motivated and results-oriented Bioinformatics and Computational Biology graduate from the University of Science and Technology at Zewail City (GPA: 3.50/4.0, Graduated: June 2025). My academic background has provided me with a strong foundation in Python, Machine Learning, Deep Learning, C++, and Data Structures.</p>
+                    <p>My core interest lies in interdisciplinary research at the intersection of AI, genomics, and healthcare. I am particularly passionate about developing interpretable AI systems for early disease diagnosis and genetic risk analysis, aiming to make significant contributions to precision medicine, with a current focus on Alzheimer's Disease research.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Experience Section -->
+        <section id="experience">
+            <h2>Research Experience</h2>
+            <div class="experience-item">
+                <h3>Junior Research Assistant</h3>
+                <p class="sub-heading">Bioinformatics and Computational Biology Unit, Zewail City, Giza, Egypt | Nov 2023 – PRESENT</p>
+                <ul>
+                    <li>Conducted in-depth literature review on predictive modeling and SNP-disease associations, with a focus on Alzheimer's Disease.</li>
+                    <li>Performed genomic data preprocessing, phasing, imputation, and post-imputation QC using SHAPEIT5 and Beagle 5.4.</li>
+                    <li>Worked with standard biological data formats such as VCF and PLINK.</li>
+                    <li>Developed and automated bioinformatics workflows using Python, Bash, and relevant toolkits.</li>
+                    <li>Gained hands-on experience in GWAS data handling and analysis.</li>
+                    <li>Skills: Data Science · GWAS · Research Skills · Genomic Data Processing · Bioinformatics Tools.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <h3>MRI-Based Classification of Alzheimer's Disease Stages Using CNNs</h3>
+                        <p class="project-date">November 2024</p>
+                        <p>Course project for Genomics and Data Science. Developed deep learning models (3D ResNet, dual 2D CNNs, VGG16 transfer learning) to classify Alzheimer's stages using MRI scans from the ADNI dataset. Led MRI, model training, and evaluation.</p>
+                        <p><em>Tools: PyTorch, Keras, TensorFlow, ANTsPy.</em></p>
+                    </div>
+                </div>
+                <div class="project-card">
+                     <div class="project-card-content">
+                        <h3>Cyclic Peptide Sequencing Algorithms</h3>
+                        <p class="project-date">May 2025</p>
+                        <p>Course project for Foundations of Algorithms. Implemented and compared three algorithms for cyclic peptide sequencing using theoretical mass spectrometry data.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <h3>Epigenetic Clocks and Aging: Biological Age Estimation and Therapeutic Insights</h3>
+                        <p class="project-date">November 2024</p>
+                        <p>Course project for Epigenetics in Health and Disease. Explored DNA methylation-based epigenetic clocks for biological age prediction, age acceleration, and disease association, evaluating therapeutic and lifestyle influences using bioinformatics and machine learning.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <h3>De Novo Genome Assembly Using Graph-Based Algorithms and Sequence Alignment</h3>
+                        <p class="project-date">May 2024</p>
+                        <p>Course project for Data Structures. Developed a genome assembler based on OLC (Overlap-Layout-Consensus) and MSA (Multiple Sequence Alignment) methods, using k-mer overlap detection, graph traversal, and progressive alignment for accurate DNA sequence reconstruction.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <h3>SNPs Detection in Medulloblastoma Using Bayesian Inference, Fisher’s Exact Test, and Haplotype Analysis</h3>
+                        <p class="project-date">November 2023</p>
+                        <p>Course project for Programming for Computational Biology. Designed a SNP detection pipeline for medulloblastoma using Bayesian variant calling, statistical association testing, and haplotype block inference on NGS data.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications In Progress Section -->
+        <section id="publications">
+            <h2>Publications In Progress</h2>
+            <div class="publication-item">
+                <p><strong>A Foundation of an Interpretable CNN-Based CAD System for Early Alzheimer’s Diagnosis and Genetic Risk Analysis.</strong> Toqa Khaled, Suhaila Samir, Abd El-Rahman Fouad, Zainab El-Shiekh, Eman Badr.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section with Tabs -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="tabs-container">
+                <button class="tab-button active" onclick="openTab(event, 'dry-lab')">Dry Lab</button>
+                <button class="tab-button" onclick="openTab(event, 'wet-lab')">Wet Lab</button>
+                <button class="tab-button" onclick="openTab(event, 'tools-languages')">Tools & Languages</button>
+                <button class="tab-button" onclick="openTab(event, 'interpersonal')">Interpersonal</button>
+            </div>
+            <div id="dry-lab" class="tab-content active">
+                <div class="skills-content">
+                    <div class="skill-category-box">
+                        <h3>Computational & Machine Learning</h3>
+                        <p>Python, TensorFlow, PyTorch, C++, R, Bash scripting.</p>
+                        <p>Machine Learning (Classification, Regression, Clustering), Deep Learning (CNNs, RNNs), Statistical Analysis, Algorithm Design & Analysis, Data Structures, GWAS.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="wet-lab" class="tab-content">
+                <div class="skills-content">
+                     <div class="skill-category-box">
+                        <h3>Laboratory Techniques</h3>
+                        <p>Molecular cloning, native and denaturing PAGE, PCR, Cell culture, DNA transfection, Fluorescence microscopy.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="tools-languages" class="tab-content">
+                <div class="skills-content">
+                    <div class="skill-category-box">
+                        <h3>Technical Proficiency</h3>
+                        <p><strong>Programming Languages:</strong> Python, C++, R, Bash.</p>
+                        <p><strong>Bioinformatics Tools:</strong> SHAPEIT5, Beagle 5.4, PLINK, VCF tools, BioPython, ANTsPy.</p>
+                        <p><strong>Version Control:</strong> Git, GitHub.</p>
+                        <p><strong>Spoken Languages:</strong> Arabic (Native), English (Fluent).</p>
+                    </div>
+                </div>
+            </div>
+             <div id="interpersonal" class="tab-content">
+                <div class="skills-content">
+                    <div class="skill-category-box">
+                        <h3>Interpersonal Skills</h3>
+                        <p>Teamwork, Leadership, Communication, Mentoring, Time Management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Leadership and Awards Section -->
+        <section id="leadership-awards">
+            <h2>Leadership & Achievements</h2>
+            <div class="leadership-grid">
+                <div class="leadership-item awards-highlight">
+                    <h4>Key Achievements</h4>
+                    <p><strong>ITAC-Funded Graduation Project – DiagNexus</strong><br><em>Principal Researcher - May 2025</em><br>Secured a competitive 30,000 EGP grant from ITIDA for developing DiagNexus, an AI-powered CAD system for early Alzheimer's diagnosis and genetic risk analysis.</p>
+                    <hr class="awards-divider">
+                    <p><strong>Provost's Honors Roll</strong><br><em>January 2025</em><br>Awarded by Zewail City for achieving a cumulative GPA of 3.5 or higher, recognizing academic excellence.</p>
+                    <button class="btn-view-achievements" onclick="openAchievementsModal()">View Recent Achievements</button>
+                </div>
+                <div class="leadership-item">
+                    <h4>Junior Teaching Assistant Roles (Zewail City)</h4>
+                    <p>Data Structures & Algorithms (Feb 2025 – June 2025)</p>
+                    <p>Programming for ENGL 152 (Oct 2022 – Feb 2023)</p>
+                </div>
+                <div class="leadership-item">
+                    <h4>Coding Instructor (ISchool, Egypt)</h4>
+                    <p>June 2024 – Feb 2025: Designed and taught engaging coding lessons (grades 4-6) in online and offline settings.</p>
+                </div>
+                <div class="leadership-item">
+                    <h4>Marketing Committee Vice President</h4>
+                    <p>Zewail City Science Festival (April 2023 – Sept 2023)</p>
+                    <p>Zewail City Science Union (Oct 2022 – June 2023)</p>
+                </div>
+                 <div class="leadership-item">
+                    <h4>Content Creator Intern (Amica Hub, Egypt)</h4>
+                    <p>Jan 2023 – March 2023: Produced website content, Facebook posts, and chatbot dialogues aligned with brand voice and mission.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to discussing new projects, research opportunities, or collaborations.</p>
+            <p>Email: <a href="mailto:s-toqa.ashmawy@zewailcity.edu.eg">s-toqa.ashmawy@zewailcity.edu.eg</a></p> {/* === REMINDER: Replace with your actual email === */}
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/toqakhaled/" target="_blank">LinkedIn</a> {/* === REMINDER: Replace with your actual LinkedIn URL === */}
+                <a href="https://github.com/ToqaKhaled" target="_blank">GitHub</a> {/* === REMINDER: Replace with your actual GitHub URL === */}
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentYear"></span> Toqa Khaled Abd El-Ghany. All rights reserved.</p>
+    </footer>
+
+    <!-- Achievements Modal -->
+    <div id="achievementsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeAchievementsModal()">×</span>
+            <h2>Recent Achievements!</h2>
+            <div class="modal-achievement">
+                <h3>ITAC-Funded Graduation Project</h3>
+                <h4>DiagNexus: AI-Powered CAD System for Alzheimer's</h4>
+                <p><strong>Role:</strong> Principal Researcher</p>
+                <p><strong>Funding Secured:</strong> 30,000 EGP (ITIDA Grant)</p>
+                <p class="modal-achievement-detail">Successfully secured competitive national funding to develop DiagNexus, an AI-powered CAD system that integrates deep learning and interpretability techniques to classify Alzheimer's stages from MRI scans with high accuracy. The system aims to offer multi-model predictions, visual heatmaps, and supports genetic analysis to explore causal links between brain features and disease outcomes.</p>
+            </div>
+            <hr class="modal-divider">
+            <div class="modal-achievement">
+                <h3>Provost's Honors Roll</h3>
+                <h4>Zewail City of Science and Technology</h4>
+                <p><strong>Awarded:</strong> January 2025</p>
+                <p class="modal-achievement-detail">Recognized for achieving a cumulative GPA of 3.5 or higher, demonstrating sustained academic excellence.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
