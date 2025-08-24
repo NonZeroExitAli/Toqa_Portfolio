@@ -213,24 +213,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Shows modal on page load after a small delay
     setTimeout(openAchievementsModal, 1500); // Remove or comment this line if you don't want it to show automatically
-});```
-
----
-
-### **CRITICAL STEP 3: Add Your Image Files**
-
-1.  Place your favicon image (e.g., `icon.png`) directly in your main folder.
-2.  Place your profile picture (e.g., `your_photo.jpg`) directly in your main folder.
-3.  Place your hero background image (e.g., `your-hero-background.jpg`) directly in your main folder.
-
-**Crucially, ensure the filenames you use match EXACTLY what's written in `index.html` and `style.css` (e.g., `your_photo.jpg`, `your-hero-background.jpg`, `icon.png`). Pay attention to capitalization and extensions.**
-
----
-
-### **CRITICAL STEP 4: Test Locally & Troubleshoot**
-
-1.  **Open `index.html`:** Double-click the `index.html` file in your `toqa_portfolio` folder.
-2.  **Verify:** The site should now display correctly with the black and teal styling. All functionality should work.
-3.  **Check Developer Tools:** Press `F12`. Go to the "Console" tab and confirm there are no red error messages related to file loading.
-
-This "all-in-one-folder" approach simplifies paths considerably and should resolve any loading issues you were experiencing due to incorrect path references.
+});
