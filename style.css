@@ -195,7 +195,7 @@ h2::after {
 
 /* --- Hero Section --- */
 #hero {
-    background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.9)), url('images/your-hero-background.jpg') no-repeat center center/cover; {/* === IMPORTANT: Replace with your actual BG image path === */}
+    background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.9)), url('your-hero-background.jpg') no-repeat center center/cover; {/* === PATH UPDATED: Removed 'images/' === */}
     color: var(--text-light);
     min-height: calc(100vh - var(--header-height));
     display: flex;
@@ -720,7 +720,7 @@ footer a:hover {
 
 /* --- Mobile Navigation & Responsive Adjustments --- */
 .mobile-nav-toggle {
-    display: none;
+    display: none; /* Hidden by default on desktop */
     background: transparent;
     border: 0;
     color: var(--text-light);
@@ -753,22 +753,23 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+    /* Styles for mobile navigation to appear */
     nav ul#primary-navigation {
         position: fixed;
-        inset: 0 0 0 30%;
+        inset: 0 0 0 30%; /* Covers 70% of the screen from the right */
         flex-direction: column;
         align-items: flex-start;
         padding: min(20vh, 10rem) 2em;
         gap: 1.5em;
-        background: rgba(26, 26, 26, 0.95);
+        background: rgba(26, 26, 26, 0.95); /* Semi-transparent dark background */
         backdrop-filter: blur(0.5rem);
-        -webkit-backdrop-filter: blur(0.5rem);
-        transform: translateX(100%);
+        -webkit-backdrop-filter: blur(0.5rem); /* For Safari */
+        transform: translateX(100%); /* Starts off-screen to the right */
         transition: transform var(--transition-speed) ease-in-out;
     }
 
     nav ul#primary-navigation[data-visible="true"] {
-        transform: translateX(0%);
+        transform: translateX(0%); /* Slides in from the right */
     }
 
     nav ul li {
@@ -786,7 +787,7 @@ footer a:hover {
     }
 
     .mobile-nav-toggle {
-        display: block;
+        display: block; /* Show hamburger icon on mobile */
         position: absolute;
         top: 50%;
         right: 1.5rem;
@@ -822,18 +823,18 @@ footer a:hover {
 
     .tabs-container {
         justify-content: flex-start;
-        overflow-x: auto;
+        overflow-x: auto; /* Allow horizontal scrolling for tabs if many */
         white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
     }
-    .tabs-container::-webkit-scrollbar {
+    .tabs-container::-webkit-scrollbar { /* Hide scrollbar for Chrome, Safari */
         display: none;
     }
     .tab-button {
         padding: 10px 15px;
         font-size: 1rem;
-        flex-shrink: 0;
+        flex-shrink: 0; /* Prevent buttons from shrinking */
     }
     .skills-content {
         grid-template-columns: 1fr;
