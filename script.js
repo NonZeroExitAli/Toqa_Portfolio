@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (achievementsModal) {
             achievementsModal.classList.remove('show');
             document.body.style.overflowY = 'auto';
-            // localStorage.setItem('achievementsModalShown', 'true'); // Optional
+            // localStorage.setItem('achievementsModalShown', 'true'); // Optional: Uncomment if you want the modal to show only once per user
         }
     }
 
@@ -209,14 +209,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 closeAchievementsModal();
             }
         });
-        // Note: The close button (X) already has onclick in HTML
     }
 
-
-    // Show modal on page load
-    // if (!localStorage.getItem('achievementsModalShown')) { // Optional
-    //     setTimeout(openAchievementsModal, 1500);
-    // }
-     setTimeout(openAchievementsModal, 1500); // Remove this line and uncomment above for one-time show
-
+    // Shows modal on page load after a small delay
+    setTimeout(openAchievementsModal, 1500); // Remove or comment this line if you don't want it to show automatically
 });
